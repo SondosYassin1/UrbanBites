@@ -1,113 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/general.css">
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/hero-section.css">
+  <link rel="stylesheet" href="CSS/features-section.css">
+  <link rel="stylesheet" href="CSS/popular-menu.css">
+  <link rel="stylesheet" href="CSS/testimonials.css">
+  <link rel="stylesheet" href="CSS/footer.css">
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">
-    <h1>UrbanBites</h1>
+
+    <div class="menu-icon">☰</div>
+
+    <h1 class="logo">UrbanBites</h1>
+
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Contact</li>
-        <li>About</li>
+        <li class="active">
+          <a class="nav-links" href="#home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="#">
+            Menu
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="#">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="#">
+            About
+          </a>
+        </li>
       </ul>
     </nav>
-   <!--<button class="order-now">Order Now</button>-->
+    <div class="btns">
+      <button class="btn btn-sign-in">Sign In</button>
+      <button class="btn btn-sign-up">Sign Up</button>
+    </div>
+    <!--<button class="order-now">Order Now</button>-->
   </header>
 
-<!-- Main Section -->
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>UrbanBites</h1>
-        <p class="hero-subtitle">
-          Where Culinary Art Meets Urban Soul
-        </p>
-        <p class="hero-description">
-          Experience a culinary journey that celebrates the vibrant energy of city life.
-          Each dish tells a story of passion, innovation, and the relentless pursuit of flavor perfection.
-        </p>
-      </div>
-      <div class="hero-buttons">
-        <a href="#menu" >
-          <button class="btn-primary">
-            Explore Interactive Menu
-          </button>
-        </a>
-        <a href="#tables" >
-          <button class="btn-secondary">
-            Select Your Table
-          </button>
-        </a>
-        <a href="#order">
-          <button class="btn-order">
-            Order Now
-          </button>
-        </a>
+  <!-- Main Section -->
+  <main class="content">
+
+    <div class="layout">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>UrbanBites</h1>
+          <p class="hero-subtitle">
+            Where Culinary Art Meets Urban Soul
+          </p>
+          <p class="hero-description">
+            Experience a culinary journey that celebrates the vibrant energy of city life.
+            Each dish tells a story of passion, innovation, and the relentless pursuit of flavor perfection.
+          </p>
+        </div>
+        <div class="hero-buttons">
+          <a class="btns-link " href="#menu">
+            <button class="btn-primary btns">
+              Explore Interactive Menu
+            </button>
+          </a>
+          <a class="btns-link " href="#tables">
+            <button class="btn-secondary btns">
+              Select Your Table
+            </button>
+          </a>
+          <a class="btns-link order-link" href="#order">
+            <button class="btn-order btns">
+              Order Now
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="hero-picture-wrapper  parent">
+          <img class="hero-picture" src="img/checken.png" alt="checken">
+        </div>
+      </aside>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="features-container">
+        <h2 class="features-title">
+          Why Choose UrbanBites?
+        </h2>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon">🥗</div>
+            <h3>
+              Fresh & Quality Ingredients
+            </h3>
+            <p>
+              We take pride in using only the freshest, locally sourced ingredients to prepare every dish. Quality and
+              taste go
+              hand
+              in hand in every bite you take.
+            </p>
+          </div>
+
+
+          <div class="feature-card">
+            <div class="feature-icon">🌆</div>
+            <h3>
+              Unique Urban Atmosphere
+            </h3>
+            <p>
+              Dine in a modern, cozy, and stylish environment that reflects the vibrant spirit of the city. Perfect for
+              families,
+              friends, and food lovers alike.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>
+              Fast Delivery & Takeaway
+            </h3>
+            <p>
+              Enjoy your favorite meals without the wait. Our delivery service is lightning-fast, ensuring your food
+              arrives hot
+              and
+              on time every time.
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- Features Section -->
-     <section class="features">
-        <div class="features-container">
-          <h2 class="features-title">
-            Why Choose UrbanBites?
-          </h2>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon">🍽️</div>
-              <h3>
-                Exquisite Cuisine
-              </h3>
-              <p>
-                Our chefs create innovative dishes using the 
-                finest locally-sourced ingredients, blending 
-                traditional techniques with modern presentation.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">🍽️</div>
-              <h3>
-                Exquisite Cuisine
-              </h3>
-              <p>
-                Our chefs create innovative dishes using the
-                finest locally-sourced ingredients, blending
-                traditional techniques with modern presentation.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">🍽️</div>
-              <h3>
-                Exquisite Cuisine
-              </h3>
-              <p>
-                Our chefs create innovative dishes using the
-                finest locally-sourced ingredients, blending
-                traditional techniques with modern presentation.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">🍽️</div>
-              <h3>
-                Exquisite Cuisine
-              </h3>
-              <p>
-                Our chefs create innovative dishes using the
-                finest locally-sourced ingredients, blending
-                traditional techniques with modern presentation.
-              </p>
-            </div>
-          </div>
+    <!-- Popular Menu -->
+    <section id="menu" class="menu">
+
+      <h3>Most requested dishes</h3>
+
+      <div class="menu-grid">
+
+        <div class="dish-card">
+          <img class="dish-picture" src="img/burger.jpg" alt="burger">
+          <h5 class="dish-name">Burger</h5>
+          <p class="dish-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam rem
+          </p>
+          <p class="dish-price">15</p>
         </div>
-     </section>
+
+        <div class="dish-card">
+          <img class="dish-picture" src="img/Pepperoni Pizza.jpg" alt="piza">
+          <h5 class="dish-name">Pepperoni Pizza</h5>
+          <p class="dish-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam
+          </p>
+          <p class="dish-price">15</p>
+        </div>
+
+        <div class="dish-card">
+          <img class="dish-picture" src="img/Crispy Chicken Strips.jpg" alt="Crispy chichen">
+          <h5 class="dish-name">Crispy Chicken Strips</h5>
+          <p class="dish-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam
+          </p>
+          <p class="dish-price">15</p>
+        </div>
+
+        <div class="dish-card">
+          <img class="dish-picture" src="img/desert.jpg" alt="desert">
+          <h5 class="dish-name">Raspberry Cake</h5>
+          <p class="dish-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam
+          </p>
+          <p class="dish-price">15</p>
+        </div>
+
+      </div>
+
+      <div class="button-line">
+        <button class="menu-btn">View Full Menu</button>
+      </div>
+    </section>
+
   </main>
+
+  <!--Testimonials Your Words, Our Pride-->
+
+  <section class="testimonials">
+
+    <h3>Your Words, Our Pride</h3>
+
+    <div class="testimonials-grid">
+
+      <div class="client-opinion-card">
+        <img class="client-image" src="img/clinet1.jpg" alt="anna">
+        <p class="client-opinion">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam rem
+        </p>
+        <h5 class="client-name">Anna</h5>
+      </div>
+
+      <div class="client-opinion-card">
+        <img class="client-image" src="img/client2.jpg" alt="">
+        <p class="client-opinion">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam rem
+        </p>
+        <h5 class="client-name">Noah</h5>
+      </div>
+
+      <div class="client-opinion-card">
+        <img class="client-image" src="img/client3.jpg" alt="">
+        <p class="client-opinion">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam rem
+        </p>
+        <h5 class="client-name">Ethan</h5>
+      </div>
+
+      <div class="client-opinion-card">
+        <img class="client-image" src="img/clinet4.jpg" alt="">
+        <p class="client-opinion">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni laudantium aperiam ipsam rem
+        </p>
+        <h5 class="client-name">Liam</h5>
+      </div>
+
+    </div>
+
+    <div class="button-line">
+      <button class="view-more-btn">View All Reviews</button>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-grid">
+
+      <div class="footer-card">
+        <h4 class="footer-title">Contact information</h4>
+        <p>Address: 123 Flavor Street, Gaza City </p>
+        <p>Phone: +970 599 123 456 </p>
+        <p>Email: hello@urbanbites.com </p>
+      </div>
+
+      <div class="footer-card">
+        <h4 class="footer-title">Quick links</h4>
+        <a href="#menu">Menu </a>
+        <a href="#contact">Contact </a>
+        <a href="#about">About Us </a>
+      </div>
+
+      <div class="footer-card">
+        <h4 class="footer-title">Social media</h4>
+        <p>
+          <i class="fab fa-facebook-f"></i>
+          Facebook: UrbanBitesPal
+        </p>
+        <p>
+          <i class="fab fa-instagram"></i>
+          Instagram: @urbanbites.pal
+        </p>
+        <p>
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp: +970 599 123 456
+        </p>
+      </div>
+
+      <div class="footer-card">
+        <h4 class="footer-title">Working hours</h4>
+        <p>Monday - Friday</p>
+        <p>9:00 AM - 11:00 PM</p>
+      </div>
+
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
